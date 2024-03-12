@@ -123,23 +123,23 @@ body {
   display: none;
 }
 
-.navigation input:checked ~ .hamburger {
+.navigation input:checked~.hamburger {
   background: transparent;
 }
 
-.navigation input:checked ~ .hamburger:before {
+.navigation input:checked~.hamburger:before {
   top: 0;
   transform: rotate(-45deg);
   width: 30px;
 }
 
-.navigation input:checked ~ .hamburger:after {
+.navigation input:checked~.hamburger:after {
   top: 0;
   transform: rotate(45deg);
   width: 30px;
 }
 
-.navigation input:checked ~ .menu {
+.navigation input:checked~.menu {
   right: 0;
 }
 
@@ -159,7 +159,7 @@ main {
 
 .hero {
   background-image: linear-gradient(transparent 10%, black 100%),
-    url("https://media.discordapp.net/attachments/1085644871508971680/1087474994583449660/terryc_a_couple_wearing_beautiful_white_and_beige_handmade_swea_eb0fb853-a7ae-45ff-9723-b90e2735b0ee.png?width=850&height=476");
+    url("banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,8 +239,7 @@ section.products h2 {
 
 .product-grid .product {
   width: 100%;
-  height: auto;
-  overflow: hidden;
+  height: 550px;
   max-width: 300px;
   position: relative;
   border-radius: 4px;
@@ -315,12 +314,16 @@ p.old-price {
 }
 
 .details button.add-to-cart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   padding: 6px;
   border: none;
   color: white;
   display: flex;
-  border-radius: 4px;
+  align-items: center;
+  padding-inline: 1rem;
   background-color: red;
   font-size: 1.2rem;
   cursor: pointer;
@@ -351,6 +354,7 @@ button.see-more {
 }
 
 @media only screen and (max-width: 550px) {
+
   .hamburger,
   .toggle-menu {
     display: block;
@@ -399,6 +403,7 @@ button.see-more {
 }
 
 @media screen and (max-width: 800px) {
+
   .hamburger,
   .toggle-menu {
     display: block;
